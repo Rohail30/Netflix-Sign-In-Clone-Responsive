@@ -1,0 +1,292 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+
+body{
+      background: url(images/bg.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      backdrop-filter: brightness(40%);
+}
+
+#logo_sec img{
+    width: 180px;
+    height: 55px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+
+/* #background img{
+    position: absolute;
+    filter: brightness(40%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 4;
+    z-index: -1;
+    
+} */
+
+#sign-in{
+    margin: 0 auto;
+    width: 380px;
+    height: 600px;
+    padding-top: 60px;
+    padding-left: 80px;
+    /* background-color: #000; */
+    /* opacity: 0.6; */
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    
+}
+
+#sign-in h1{
+    font-size: 32px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+}
+
+#input {
+    margin-top: 20px;
+    width: 300px;
+    height: 50px;
+    border-radius: 3px;
+    border: 1px solid #333333;
+    background-color: #333333;
+    outline: none;
+    padding-left: 20px;
+    
+} 
+
+#input:focus{
+    color: white;
+}
+
+#sign-in ::placeholder{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+#sign-in button{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    width: 320px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #e50914;
+    color: white;
+    border: 1px solid #e50914;
+    border-radius: 5px;
+}
+
+#cb label{
+    color: white;
+    font-size: 14px;
+}
+
+#lab{
+    display: inline-block;
+    margin-left: 135px;
+}
+
+#last{
+    color: white;
+    margin-top: 60px;
+}
+
+#last p{
+    font-size: 13px;
+}
+
+#foot{
+    display: flex;
+    flex-direction: column;
+    margin-top: 110px;
+    width: 100%;
+    height: 200px;
+    background: rgba(0, 0, 0, 0.6);
+    
+}
+
+#fir{
+    margin-left: 250px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    max-width: 900px;
+
+}
+
+#fir p{
+    color: #737373;
+    font-size: 16px;
+    width: 250px;
+
+}
+
+#sec{
+    display: flex;
+    flex-direction: row;
+    gap: 25px 100px;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin-left: 250px;
+}
+
+#sec p{
+    width: 150px;
+    color: #737373;
+    font-size: 13px; 
+}
+
+@media only screen and (max-width:700px) {
+
+    body{
+      background-image: none;
+      background-color: black;
+      background-size: cover;
+      background-repeat: no-repeat;
+      backdrop-filter: brightness(100%);
+    }
+
+    #logo_sec img{
+        width: 180px;
+        height: 55px;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-bottom: 0px;
+    }
+
+    #sign-in{
+        margin: 0;
+        width: inherit;
+        height: 550px;
+        padding-top: 30px;
+        padding-left: 40px;
+        padding-right: 40px;
+        /* background-color: bisque; */
+        /* background-color: #000; */
+        /* opacity: 0.6; */
+        /* background: rgba(0, 0, 0, 0.6); */
+        border-radius: 0px;
+        border-bottom: solid #737373;
+        border-width: 0.05em;
+        
+    }
+
+    #form{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #input {
+        margin-top: 20px;
+        width: inherit;
+        height: 50px;
+        border-radius: 3px;
+        border: 1px solid #333333;
+        background-color: #333333;
+        
+    }
+
+    #sign-in button{
+        margin-top: 40px;
+        margin-bottom: 10px;
+        width: inherit;
+        height: 50px;
+        font-size: 16px;
+        font-weight: 600;
+        background-color: #e50914;
+        color: white;
+        border: 1px solid #e50914;
+        border-radius: 5px;
+    }
+
+    #lab{
+        display: inline-block;
+        margin-left: 40px;
+        float: right;
+    }
+
+    #foot{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+        width: 100%;
+        height: 250px;
+        background: rgba(0, 0, 0, 0.6);
+    }
+
+    #fir{
+        margin-left: 40px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        max-width: 900px;
+    }
+
+    #sec{
+        display: flex;
+        flex-direction: row;
+        gap: 25px 80px;
+        flex-wrap: wrap;
+        max-width: 900px;
+        margin-left: 40px;
+    }
+    
+}
+
+@media only screen and (max-width:440px) {
+
+    #logo_sec img{
+        width: 74px;
+        height: 20px;
+        margin-top: 20px;
+        margin-left: 15px;
+        margin-bottom: 0px;
+    }
+
+    #sign-in{
+        margin: 0;
+        width: inherit;
+        height: 550px;
+        padding-top: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 0px;
+        border-bottom: solid #737373;
+        border-width: 0.05em;
+        
+    }
+
+
+    #last{
+        color: white;
+        margin-top: 30px;
+    }
+    
+    #sec{
+        display: flex;
+        flex-direction: row;
+        gap: 25px 50px;
+        flex-wrap: wrap;
+        max-width: 900px;
+        margin-left: 40px;
+    }
+    
+    #sec p{
+        width: 130px;
+        color: #737373;
+        font-size: 13px; 
+    }
+}
